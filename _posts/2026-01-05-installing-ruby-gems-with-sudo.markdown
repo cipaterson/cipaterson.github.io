@@ -28,7 +28,8 @@ This is a script, a stub, in /usr/bin/rails probably installed with the system v
 But I thought "sudo", really?  Googling, it seems that using sudo with gem install is considered a "bad idea"™ because the installed files are owned by root and any hooks invoked on install run as root, as does the gem later when it's required.  Who knows what it's doing with those privileges?  There are also references to the gem being installed somewhere odd and not being available later to an non-root user but I could not confirm this behaviour.
 
 I don't fully understand how mise does its magic but `gem environment` shows this when ruby is managed by mise:
-```  - GEM PATHS:
+```
+  - GEM PATHS:
      - /Users/chris/.local/share/mise/installs/ruby/3.4.2/lib/ruby/gems/3.4.0
      - /Users/chris/.local/share/gem/ruby/3.4.0
 ```
@@ -36,7 +37,8 @@ I don't fully understand how mise does its magic but `gem environment` shows thi
 The first is the global (--no-user-install) location (which is the default) and the second is where gem installs for the current user only (--user-install must be specified). Some people add this to their ~/.gemrc file but my system is just for me so I'm happy to install gems globaly. (Though, obviously, it's not realy global since mise has put it under my $HOME).
 
 So I installed a gem with sudo to see what happens.
-```% sudo gem install  awesome_print
+```
+% sudo gem install  awesome_print
 Fetching awesome_print-1.9.2.gem
 Successfully installed awesome_print-1.9.2
 Parsing documentation for awesome_print-1.9.2
