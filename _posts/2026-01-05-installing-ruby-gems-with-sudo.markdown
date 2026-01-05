@@ -3,6 +3,8 @@ layout: post
 title: "Installing Ruby Gems with sudo"
 date: 2026-01-05
 ---
+Read this in about {{ page.content | reading_time }}
+
 # Introduction
 
 I'm using Mise (https://mise.jdx.dev/) to manage my ruby environment.
