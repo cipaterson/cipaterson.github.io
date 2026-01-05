@@ -3,7 +3,7 @@ layout: post
 title: "Installing Ruby Gems with sudo"
 date: 2026-01-05
 ---
-Read this in about {{ page.content | reading_time }}
+Read this in {{ page.content | reading_time }}
 
 # Introduction
 
